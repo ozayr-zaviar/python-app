@@ -35,3 +35,8 @@ jobs:
       - name: Test with pytest
         run: |
           pytest test.py
+
+  deployment:
+      steps:
+        - uses: ozayr-zaviar/python-app/.github/workflows/deployment.yml@master
+        - name: Deploy app
