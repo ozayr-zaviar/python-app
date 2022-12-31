@@ -18,3 +18,8 @@ def min(values):
             _min = val
 
     return _min
+
+
+def same(values):
+
+    return values
