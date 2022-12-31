@@ -37,4 +37,4 @@ jobs:
           pytest test.py
 
   deployment:
-    - uses: ozayr-zaviar/python-app/.github/workflows/deployment.yml@master
+    uses: ozayr-zaviar/python-app/.github/workflows/deployment.yml@master
