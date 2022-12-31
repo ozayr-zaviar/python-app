@@ -12,4 +12,5 @@ jobs:
     concurrency: production
     steps:
       - name: deploy
+      - uses: actions/checkout@v3
         # ...deployment-specific steps
