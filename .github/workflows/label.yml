@@ -31,3 +31,7 @@ jobs:
       - name: Test label echo
         run: |
           echo "Test label added on ${{ github.event.pull_request.head.ref }}"
+      - name: Slack Notification
+        run: |
+          echo "Send slack notifications"
+
