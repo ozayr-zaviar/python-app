@@ -19,7 +19,7 @@ jobs:
       - name: Deployment
         env:
           DB_HOST: ${{ secrets.DB_HOST }}
-          DB_PASSWORD: ${{ secrets.DB_HOST }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
           VERSION: ${{ vars.APP_VERSION }}
         run: |
           echo "deployment steps"
