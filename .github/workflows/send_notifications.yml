@@ -1,0 +1,16 @@
+name: Notifications
+
+on:
+  workflow_run:
+    workflows: ["Python package"]
+    types:
+      - completed
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    name: Send notifications
+    steps:
+      - name: Slack Notification
+        run: |
+          echo "Send slack notifications"
