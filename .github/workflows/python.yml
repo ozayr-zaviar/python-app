@@ -38,5 +38,6 @@ jobs:
           pytest test.py
 
   deployment:
+    needs: build
     if: github.ref == 'refs/heads/master' && github.event_name == 'push'
     uses: ozayr-zaviar/python-app/.github/workflows/deployment.yml@master
