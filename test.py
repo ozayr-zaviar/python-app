@@ -22,3 +22,6 @@ def test_max_2():
 
     val = application.max(values)
     assert val == 7
+
+
+
