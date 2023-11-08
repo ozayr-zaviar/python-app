@@ -4,6 +4,23 @@ on:
   pull_request:
     branches: [ master ]
     types: ['labeled']
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Flow version
+        type: choice
+        required: true
+        default: "v3"
+        options:
+          - "v1"
+          - "v2"
+          - "v3"
+      app-name:
+        description: App Name (Optional, defaults to anyroad-<branch>)
+        type: string
+        default: "test App"
+        required: false
+
 
 jobs:
   merge:
