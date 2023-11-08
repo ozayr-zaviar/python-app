@@ -20,7 +20,8 @@ jobs:
         env:
           DB_HOST: ${{ secrets.DB_HOST }}
           DB_PASSWORD: ${{ secrets.DB_HOST }}
+          VERSION: ${{ vars.APP_VERSION }}
         run: |
           echo "deployment steps"
-          echo "Setting database from $DB_HOST with password: $DB_PASSWORD (Do not log secrets like this)"
+          echo "APP VERSION: $VERSION, Setting database from $DB_HOST with password: $DB_PASSWORD (Do not log secrets like this)"
         # ...deployment-specific steps
